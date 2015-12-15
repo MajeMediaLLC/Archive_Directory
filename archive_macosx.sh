@@ -13,6 +13,6 @@ sink="${args[2]}"
 
 now="$(date +'%Y%m%d%H%M')"
 out="${arc}.${now}.tar.gz"
-/bin/tar -czvf "${sink}/${out}" -C "${src}" . > /dev/null 2>&1
+/usr/bin/tar -czvf "${sink}/${out}" -C "${src}" . > /dev/null 2>&1
 
 exit 0
